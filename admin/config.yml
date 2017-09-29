@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: stiliyana/content-pages-test # Path to your Github repository
+  branch: master # Branch to update
+media_folder: "images"
+public_folder: "/images"
+collections:
+  - name: "client-a-english"
+    folder: "_client_a/en"
+    label: "Client A EN"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "client-a-german"
+    folder: "_client_a/de"
+    label: "Client A DE"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
